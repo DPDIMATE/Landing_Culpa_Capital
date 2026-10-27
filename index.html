@@ -22,8 +22,44 @@
 
   <main>
 
-    <!-- CRIS: AQUÍ VA LA SECCIÓN PRINCIPAL CON LA IMAGEN DE LAS DOS HAMBURGUESAS -->
-    <section>
+    <section class="banner">
+      <img src="Recursos/banner.jpg" class="img-fluid w-100"
+        alt="La Culpa Capital: una hamburguesa del sur y otra del norte de Bogotá">
+    </section>
+ 
+    <!-- CRIS: HAMBURGUESA LA SUR (imagen a la izquierda, texto a la derecha) -->
+    <section class="hamburguesa hamburguesa--sur" id="la-sur">
+      <img src="Recursos/la-sur.jpg" class="img-fluid w-100"
+        alt="Hamburguesa La Sur servida sobre papel kraft">
+      <article class="hamburguesa__texto">
+        <h2 class="hamburguesa__nombre">LA SUR</h2>
+        <p class="hamburguesa__descripcion">
+          Carne a la parrilla en pan de ajonjolí, con queso derretido, tocineta, lechuga rallada,
+          tomate, cebolla morada, jalapeños, guacamole, cilantro y salsa de mostaza.
+        </p>
+        <p class="hamburguesa__precio">$28.000</p>
+        <button type="button" class="boton-carrito" data-nombre="La Sur" data-precio="28000">
+          Agregar al carrito
+        </button>
+      </article>
+    </section>
+ 
+    <!-- CRIS: HAMBURGUESA LA NORTE (texto a la izquierda, imagen a la derecha) -->
+    <section class="hamburguesa hamburguesa--norte" id="la-norte">
+      <img src="Recursos/la-norte.jpg" class="img-fluid w-100"
+        alt="Hamburguesa La Norte servida sobre una pizarra">
+      <article class="hamburguesa__texto">
+        <h2 class="hamburguesa__nombre">LA NORTE</h2>
+        <p class="hamburguesa__descripcion">
+          Carne a la parrilla en pan brioche con ajonjolí, queso derretido, tocineta, lechuga y rúcula,
+          tomate, cebolla morada, jalapeños, guacamole, cilantro y salsa cremosa.
+        </p>
+        <p class="hamburguesa__precio">$30.000</p>
+        <button type="button" class="boton-carrito" data-nombre="La Norte" data-precio="30000">
+          Agregar al carrito
+        </button>
+      </article>
+    </section>
 
     </section>
 
