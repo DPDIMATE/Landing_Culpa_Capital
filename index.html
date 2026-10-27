@@ -67,40 +67,59 @@
 
     <!-- KEVIN: AQUÍ VA LA SECCIÓN QUIÉNES SOMOS -->
     <section>
-      <button id="prueba">sky</button>
+      
     </section>
 
 
   </main>
   <!-- CARRITO -->
-  <section>
-    <div class="container text-center">
-      <h1 class="">Carrito de compras</h1>
-      <div class="row">
-        <!-- Menu Compra -->
-        <div class="col">
-          <div id="menu" class="card p-4"></div>
-        </div>
-        <!-- Resumen de Orden -->
-        <div class="col card p-2">
-          <h4><strong>Orden</strong></h4>
-          <div>
+  <section id="carrito" class="py-5">
+    <div class="container">
+      <div class="row g-4">
 
-            <span>Subtotal:</span>
-            <span id="subtotal">$0.00</span>
-          </div>
-          <div>
-            <span>Impuesto Nacional al Consumo (8%)</span>
-            <span id="impuesto">$0.00</span>
-          </div>
-          <div>
-            <strong>Total</strong>
-            <strong id="total">$0.00</strong>
-          </div>
-          <div>
-            <button class="btn btn-primary">Comprar</button>
+        <!-- La carta -->
+        <div class="col-12 col-lg-7">
+          <h1 class="h2 mb-3">La carta de hoy</h1>
+
+          <!-- El script dibuja aquí los productos -->
+          <div id="menu"></div>
+        </div>
+
+        <!-- Mi pedido -->
+        <div class="col-12 col-lg-5">
+          <div class="rounded-4 p-4" style="background-color: var(--crema-calido);">
+            <h2 class="mb-3">Mi pedido</h2>
+
+            <!-- El script lo muestra si existe un pedido anterior -->
+            <button id="repetir" type="button" class="btn btn-outline-dark rounded-pill mb-3" hidden>
+              <i class="fa-solid fa-rotate-left me-1" aria-hidden="true"></i>Repetir último pedido
+            </button>
+
+            <!-- El script dibuja aquí las líneas del pedido -->
+            <ul id="lista-pedido" class="list-unstyled mb-3" aria-live="polite"></ul>
+
+            <div class="d-flex justify-content-between small text-secondary">
+              <span>Subtotal</span>
+              <span id="subtotal">$0</span>
+            </div>
+            <div class="d-flex justify-content-between small text-secondary mb-2">
+              <span>Impuesto Nacional al Consumo (8%)</span>
+              <span id="impuesto">$0</span>
+            </div>
+            <div class="d-flex justify-content-between border-top pt-3 mb-4 fs-5 fw-bold">
+              <span>Total:</span>
+              <span id="total">$0</span>
+            </div>
+
+            <button id="comprar" type="button" class="btn btn-danger w-100 mb-2">
+              Comprar
+            </button>
+            <button id="vaciar" type="button" class="btn btn-link text-secondary w-100" hidden>
+              Vaciar carrito
+            </button>
           </div>
         </div>
+
       </div>
     </div>
   </section>
