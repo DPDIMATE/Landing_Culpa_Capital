@@ -26,4 +26,106 @@
   font-family: 'Arvo', sans-serif;
   font-weight: 300;  
   font-size: 20px;
+  --fuente-titulos: "Poppins", sans-serif;
+  --fuente-texto: "Inter", sans-serif;
+}
+
+/* ---------- BANNER (CRIS) ---------- */
+.banner img {
+  display: block;
+}
+ 
+/* ---------- HAMBURGUESAS (CRIS) ---------- */
+.hamburguesa {
+  position: relative;
+  font-family: var(--fuente-texto);
+}
+ 
+.hamburguesa img {
+  display: block;
+}
+ 
+/* En celular: el texto queda debajo de la imagen */
+.hamburguesa__texto {
+  background-color: var(--negro-carbon);
+  color: var(--crema-calido);
+  padding: 2rem 1.5rem;
+}
+ 
+.hamburguesa__nombre {
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: var(--amarillo-dorado);
+}
+ 
+.hamburguesa__precio {
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--crema-calido);
+}
+ 
+.boton-carrito {
+  background-color: var(--rojo-intenso);
+  color: var(--blanco);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+ 
+.boton-carrito:hover {
+  background-color: var(--gris-pizarra);
+  color: var(--negro-carbon);
+}
+ 
+.boton-carrito:focus-visible {
+  outline: 3px solid var(--amarillo-dorado);
+  outline-offset: 2px;
+}
+ 
+/* En computador: el texto se pone sobre el espacio vacío de la imagen */
+@media (min-width: 992px) {
+  .hamburguesa__texto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4%;
+    background-color: transparent;
+  }
+ 
+  .hamburguesa__nombre {
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+  }
+ 
+  /* LA SUR: texto a la derecha, sobre fondo claro */
+  .hamburguesa--sur .hamburguesa__texto {
+    right: 0;
+    color: var(--negro-carbon);
+  }
+ 
+  .hamburguesa--sur .hamburguesa__nombre,
+  .hamburguesa--sur .hamburguesa__precio {
+    color: var(--negro-carbon);
+  }
+
+  .boton-carrito:hover {
+  background-color: var(--gris-pizarra);
+  color: var(--crema-calido);
+}
+ 
+  /* LA NORTE: texto a la izquierda, sobre fondo oscuro */
+  .hamburguesa--norte .hamburguesa__texto {
+    left: 0;
+  }
 }

@@ -24,8 +24,44 @@
 
   <main>
 
-    <!-- CRIS: AQUÍ VA LA SECCIÓN PRINCIPAL CON LA IMAGEN DE LAS DOS HAMBURGUESAS -->
-    <section>
+    <section class="banner">
+      <img src="Recursos/banner.jpg" class="img-fluid w-100"
+        alt="La Culpa Capital: una hamburguesa del sur y otra del norte de Bogotá">
+    </section>
+ 
+    <!-- CRIS: HAMBURGUESA LA SUR (imagen a la izquierda, texto a la derecha) -->
+    <section class="hamburguesa hamburguesa--sur" id="la-sur">
+      <img src="Recursos/la-sur.jpg" class="img-fluid w-100"
+        alt="Hamburguesa La Sur servida sobre papel kraft">
+      <article class="hamburguesa__texto">
+        <h2 class="hamburguesa__nombre">LA SUR</h2>
+        <p class="hamburguesa__descripcion">
+          Carne a la parrilla en pan de ajonjolí, con queso derretido, tocineta, lechuga rallada,
+          tomate, cebolla morada, jalapeños, guacamole, cilantro y salsa de mostaza.
+        </p>
+        <p class="hamburguesa__precio">$28.000</p>
+        <button type="button" class="boton-carrito" data-nombre="La Sur" data-precio="28000">
+          Agregar al carrito
+        </button>
+      </article>
+    </section>
+ 
+    <!-- CRIS: HAMBURGUESA LA NORTE (texto a la izquierda, imagen a la derecha) -->
+    <section class="hamburguesa hamburguesa--norte" id="la-norte">
+      <img src="Recursos/la-norte.jpg" class="img-fluid w-100"
+        alt="Hamburguesa La Norte servida sobre una pizarra">
+      <article class="hamburguesa__texto">
+        <h2 class="hamburguesa__nombre">LA NORTE</h2>
+        <p class="hamburguesa__descripcion">
+          Carne a la parrilla en pan brioche con ajonjolí, queso derretido, tocineta, lechuga y rúcula,
+          tomate, cebolla morada, jalapeños, guacamole, cilantro y salsa cremosa.
+        </p>
+        <p class="hamburguesa__precio">$30.000</p>
+        <button type="button" class="boton-carrito" data-nombre="La Norte" data-precio="30000">
+          Agregar al carrito
+        </button>
+      </article>
+    </section>
 
     </section>
 
@@ -81,19 +117,68 @@
 
         </div>
       </div>
+    <section>
+      
     </section>
 
 
   </main>
+  <!-- CARRITO -->
+  <section id="carrito" class="py-5">
+    <div class="container">
+      <div class="row g-4">
 
+        <!-- La carta -->
+        <div class="col-12 col-lg-7">
+          <h1 class="h2 mb-3">La carta de hoy</h1>
 
+          <!-- El script dibuja aquí los productos -->
+          <div id="menu"></div>
+        </div>
+
+        <!-- Mi pedido -->
+        <div class="col-12 col-lg-5">
+          <div class="rounded-4 p-4" style="background-color: var(--crema-calido);">
+            <h2 class="mb-3">Mi pedido</h2>
+
+            <!-- El script lo muestra si existe un pedido anterior -->
+            <button id="repetir" type="button" class="btn btn-outline-dark rounded-pill mb-3" hidden>
+              <i class="fa-solid fa-rotate-left me-1" aria-hidden="true"></i>Repetir último pedido
+            </button>
+
+            <!-- El script dibuja aquí las líneas del pedido -->
+            <ul id="lista-pedido" class="list-unstyled mb-3" aria-live="polite"></ul>
+
+            <div class="d-flex justify-content-between small text-secondary">
+              <span>Subtotal</span>
+              <span id="subtotal">$0</span>
+            </div>
+            <div class="d-flex justify-content-between small text-secondary mb-2">
+              <span>Impuesto Nacional al Consumo (8%)</span>
+              <span id="impuesto">$0</span>
+            </div>
+            <div class="d-flex justify-content-between border-top pt-3 mb-4 fs-5 fw-bold">
+              <span>Total:</span>
+              <span id="total">$0</span>
+            </div>
+
+            <button id="comprar" type="button" class="btn btn-danger w-100 mb-2">
+              Comprar
+            </button>
+            <button id="vaciar" type="button" class="btn btn-link text-secondary w-100" hidden>
+              Vaciar carrito
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <footer>
 
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <button id="boton">Haz clic</button>
 </body>
 
 </html>
