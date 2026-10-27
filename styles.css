@@ -5,6 +5,27 @@
   --amarillo-dorado: #FFC857;
   --crema-calido: #FFF3E0;
   --gris-pizarra: #343434;
+}
+
+
+/* Seccion de quienes somos */
+
+#quienesSomos {
+  background-color: var(--crema-calido);
+}
+
+#quienesSomos h2{
+  color: var(--rojo-intenso);
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900; 
+   
+}
+
+#quienesSomos p{
+  color: var(--negro-carbon);
+  font-family: 'Arvo', sans-serif;
+  font-weight: 300;  
+  font-size: 20px;
   --fuente-titulos: "Poppins", sans-serif;
   --fuente-texto: "Inter", sans-serif;
 }
