@@ -1,3 +1,6 @@
+/* DIANA: NAVBAR CULPA CAPITAL */
+
+/* Paleta de colores */
 :root {
   --negro-carbon: #181818;
   --naranja-vibrante: #FF6B1A;
@@ -5,4 +8,302 @@
   --amarillo-dorado: #FFC857;
   --crema-calido: #FFF3E0;
   --gris-pizarra: #343434;
+}
+
+/* Contenedor principal */
+.header-flotante-container {
+  position: relative;
+  z-index: 1000;
+  padding: 0 5% !important;
+  background: linear-gradient(110deg,
+      #181818 0%,
+      #181818 30%,
+      #4A1717 60%,
+      #8B2020 85%,
+      #E53935 100%);
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(90deg,
+      #E53935,
+      #FF6B1A,
+      #FFC857) 1;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* Navegación */
+.header-flotante-container .navbar {
+  height: 150px;
+  padding: 0;
+}
+
+/* Logo */
+.logo-culpa {
+  display: block;
+  width: 150px !important;
+  height: auto !important;
+  max-height: none;
+  object-fit: contain;
+  transform: translateY(5px);
+  transition: transform 0.3s ease;
+}
+
+.logo-culpa:hover {
+  transform: translateY(5px) scale(1.08) rotate(-2deg);
+}
+
+/* Botones de navegación */
+.header-flotante-container .navbar-nav {
+  gap: 12px;
+  align-items: center;
+}
+
+.header-flotante-container .nav-link {
+  color: var(--crema-calido);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 12px 16px !important;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.header-flotante-container .nav-link:hover,
+.header-flotante-container .nav-link:focus {
+  color: var(--crema-calido);
+  background: var(--rojo-intenso);
+  transform: translateY(-2px);
+}
+
+/* Botón Carrito */
+.header-flotante-container .nav-link.nav-ordenar {
+  color: var(--crema-calido);
+  background: var(--rojo-intenso);
+  padding: 13px 22px !important;
+  border-radius: 8px;
+  font-weight: 800;
+  box-shadow: 0 4px 16px rgba(229, 57, 53, 0.25);
+}
+
+.header-flotante-container .nav-link.nav-ordenar:hover {
+  color: var(--negro-carbon);
+  background: var(--amarillo-dorado);
+  box-shadow: 0 7px 22px rgba(255, 200, 87, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Iconos de redes sociales del navbar */
+.redes-sociales {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: -14px 5% 0 0;
+  padding: 0 0 8px;
+}
+
+.redes-sociales span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: #FFF3E0;
+  background: rgba(24, 24, 24, 0.55);
+  border: 1px solid rgba(255, 243, 224, 0.18);
+  border-radius: 50%;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.header-flotante-container .redes-sociales span:hover {
+  background: yellow !important;
+  color: black !important;
+  transform: scale(1.3);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 991.98px) {
+  .header-flotante-container .navbar-collapse {
+    padding: 18px 0;
+  }
+
+  .header-flotante-container .navbar-nav {
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .header-flotante-container .nav-link.nav-ordenar {
+    text-align: center;
+  }
+
+  .redes-sociales {
+    justify-content: flex-start;
+    margin: 8px 0;
+  }
+}
+
+/* DIANA: FOOTER CULPA CAPITAL */
+
+.footer-culpa {
+  background: linear-gradient(110deg,
+      #181818 0%,
+      #181818 30%,
+      #4A1717 60%,
+      #8B2020 85%,
+      #E53935 100%);
+
+  color: var(--crema-calido);
+
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(90deg,
+      #E53935,
+      #FF6B1A,
+      #FFC857) 1;
+
+  padding: 40px 0 0;
+}
+
+.footer-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding-bottom: 35px;
+}
+
+/* Logo del footer */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.footer-logo img {
+  display: block;
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  transform: scale(1.15);
+}
+
+/* Mensaje principal */
+.footer-contacto {
+  text-align: center;
+}
+
+.footer-contacto h2 {
+  color: var(--amarillo-dorado);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.footer-contacto p {
+  color: var(--crema-calido);
+  margin-bottom: 18px;
+}
+
+/* Botón de WhatsApp */
+.boton-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: var(--rojo-intenso);
+  color: var(--crema-calido);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.boton-whatsapp:hover {
+  background: var(--amarillo-dorado);
+  color: var(--negro-carbon);
+  transform: translateY(-3px);
+}
+
+/* Redes sociales */
+.footer-redes h3 {
+  color: var(--amarillo-dorado);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-iconos {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-iconos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 243, 224, 0.25);
+  border-radius: 50%;
+  background: rgba(24, 24, 24, 0.5);
+  color: var(--crema-calido);
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Efecto al pasar el cursor */
+.footer-iconos a:hover {
+  background: var(--amarillo-dorado);
+  color: var(--negro-carbon);
+  border-color: var(--amarillo-dorado);
+  transform: translateY(-3px);
+}
+
+/* Derechos de autor */
+.footer-derechos {
+  border-top: 1px solid rgba(255, 243, 224, 0.15);
+  padding: 18px 0;
+  text-align: center;
+}
+
+.footer-derechos p {
+  color: var(--crema-calido);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 767.98px) {
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    width: 150px;
+    height: 80px;
+  }
+
+  .footer-contacto h2 {
+    font-size: 1.7rem;
+  }
+
+  .footer-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.redes-sociales span:hover {
+  outline: 5px solid blue !important;
 }
