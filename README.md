@@ -1,5 +1,17 @@
-# Landing_Culpa_Capital
-Landing Page de Hamburguesería
+Dos lados de Bogotá, una sola culpa.
+
+              _.-"""""""""""-._
+           .-'  o   o   o   o  '-.
+          /   o    o   o    o     \
+         (_________________________)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~   Cristian Bernal
+         ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   Diana Disante
+         ███████████████████████████   Kevin Garzon
+         ═══════════════════════════   Juan bohorquez
+         (_________________________)
+
+
+Grupo 2
 
 📌 Descripción del proyecto
 
@@ -45,7 +57,6 @@ Integrante 3: [Nombre]
 
 Integrante 4: [Nombre]
 
-Integrante 5: [Nombre]
 
 🚀 Ejecución del proyecto
 
