@@ -11,17 +11,17 @@ Dos lados de Bogotá, una sola culpa.
          (_________________________)
 
 
-Grupo 2
+Grupo 3
 
-📌 Descripción del proyecto
+o Descripción del proyecto
 
 Desarrollo de una landing page interactiva para una hamburguesería, creada como parte de la Hackathon 1. El sitio busca presentar un menú atractivo y permitir que los usuarios seleccionen productos y gestionen su carrito de compras.
 
-🎯 Objetivo
+o Objetivo
 
 Crear una página web responsive, visualmente atractiva e interactiva, aplicando los conocimientos de HTML, CSS, Bootstrap y JavaScript.
 
-✨ Funcionalidades
+o Funcionalidades
 
 Presentación de la hamburguesería.
 
@@ -35,11 +35,11 @@ Diseño adaptable a celulares y computadores.
 
 Animaciones y transiciones.
 
-🛠️ Tecnologías
+o Tecnologías
 
 HTML5
 
-CSS3
+CSS
 
 Bootstrap
 
@@ -47,17 +47,7 @@ JavaScript
 
 Git y GitHub
 
-👥 Equipo de trabajo
 
-Integrante 1: [Nombre]
-
-Integrante 2: [Nombre]
-
-Integrante 3: [Nombre]
-
-Integrante 4: [Nombre]
-
-
-🚀 Ejecución del proyecto
+o Ejecución del proyecto
 
 Clonar el repositorio.
