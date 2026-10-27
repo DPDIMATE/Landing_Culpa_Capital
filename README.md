@@ -11,7 +11,7 @@ Dos lados de Bogotá, una sola culpa.
          (_________________________)
 
 
-♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨ Grupo 3 ♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨♨
+Grupo 3
 
 🍔 Descripción del proyecto
 
